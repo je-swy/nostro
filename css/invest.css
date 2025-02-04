@@ -1,0 +1,80 @@
+.invest_container {
+    background: rgba(83, 83, 98, 0.1);
+    border: 1px solid #33333A;
+    backdrop-filter: blur(4.2px);
+    border-radius: 12px;
+    padding: 80px 24px;
+    text-align: center;
+}
+.section__invest{
+    margin-bottom: 168px;
+
+}
+
+.invest_description {
+    margin-bottom: 64px;
+}
+
+.section__invest {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.questions_container {
+    text-align: center;
+}
+
+
+.email-input-container {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 0px;
+    width: 327px;
+    height: 56px;
+    background: rgba(83, 83, 98, 0.1);
+    border: 1px solid #33333A;
+    backdrop-filter: blur(4.2px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 32px;
+    margin: 0 auto;
+}
+
+.email-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.email-input::placeholder {
+    color: #8F9099;
+}
+
+.send-button {
+    width: 54px;
+    height: 54px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    /* button */
+    background: linear-gradient(274.43deg, #EBBD84 -3.28%, #3353A8 132.5%);
+    border-radius: 32px;
+
+
+}
+
+.send-button:hover {
+    opacity: 0.8;
+}
+
+.send-button svg {
+    stroke: white;
+}

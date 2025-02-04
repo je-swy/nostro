@@ -1,0 +1,125 @@
+.footer-container {
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "icons"
+        "menu";
+    justify-items: left;
+    gap: 64px;
+}
+
+
+
+.footer-logo {
+    grid-area: logo;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* Іконки соцмереж */
+.footer-icons {
+    grid-area: icons;
+    display: flex;
+    gap: 16px;
+}
+
+.footer-icons img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer-icons img:hover {
+    opacity: 1;
+}
+
+/* Меню */
+.footer-menu {
+    grid-area: menu;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer-menu li a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.footer-policy {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 64px;
+}
+
+.footer-policy li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer-policy li a:hover {
+    opacity: 1;
+}
+
+.footer-bottom p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: #D6D6D6;
+}
+
+/* 🖥 Десктопна версія */
+@media (min-width: 768px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "logo menu icons";
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .footer-logo {
+        justify-self: start;
+    }
+
+    .footer-menu {
+        flex-direction: row;
+        gap: 20px;
+        justify-self: center;
+    }
+
+    .footer-icons {
+        justify-self: end;
+    }
+
+    .footer-policy {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+}

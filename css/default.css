@@ -168,9 +168,8 @@ fieldset {
     margin-bottom: 7px;
 }
 
-.header__title-container .btn,
-.section__solution_container .btn,
-.section__shape_the_future .btn {
+
+.btn {
     margin: 0 auto;
     width: 221px;
     height: 54px;
