@@ -1,0 +1,49 @@
+.section__critical_challenges_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 123px;
+}
+
+.critical_challanges_statistics_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px 40px;
+}
+
+.critical_challanges_problem {
+    grid-column: 1 / -1;
+}
+
+.critical_challanges_description {
+    margin-bottom: 64px;
+}
+
+.critical_challanges_statistic_title {
+    margin-bottom: 16px;
+}
+
+.critical_challanges_title {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+@media (min-width:768px) {
+    .section__critical_challenges_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .critical_challanges_statistics_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .critical_challanges_description_container {
+        padding-left: 20px;
+    }
+
+    .critical_challanges_title {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 0px;
+        margin-right: 32px;
+    }
+}

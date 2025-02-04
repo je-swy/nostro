@@ -1,0 +1,291 @@
+:root {
+    --bright-white: #E9ECEF;
+    --white: #D6D6D6;
+    --yellow: #EBBD84;
+    --blue: #3353A8;
+    --dark-grey: #33333A;
+    --light-grey: rgba(83, 83, 98, 0.1);
+    --grey: #47474E;
+    --bg-color: #181819;
+    --max-width: 1280px;
+    /* --font: "Lexend", serif;
+
+  --font-size-h1: 48px;
+  --font-size-h2: 40px;
+  --font-size-h2: 40px;
+  --font-size-h4: 22px;
+
+  --font-size-type-1: 18px;
+  --font-size-type-2: 16px;
+  --font-size-label: 16px; */
+
+}
+
+html {
+    --container: 327px;
+    --padding-container: 24px;
+    box-sizing: border-box;
+    /* position: relative;
+    overflow-x: hidden; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Lexend, sans-serif;
+    min-width: 375px;
+    min-height: 100vh;
+    background-color: #181819;
+    color: #D6D6D6;
+
+    /* position: relative;
+    overflow-x: hidden; */
+}
+
+img,
+svg {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+    margin: 0;
+}
+
+iframe {
+    border: 0;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+
+.text_light {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.text_light_small {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 24px;
+}
+
+.h1 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #E9ECEF;
+}
+
+.h3_phone {
+    /* Heading */
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.text_bold {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #D6D6D6;
+}
+
+fieldset {
+    padding: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: calc(var(--container) + (var(--padding-container) * 2));
+    padding: 0 var(--padding-container);
+    margin: 0 auto;
+}
+
+.gradient_text {
+    /* background-image: linear-gradient(to right, var(--blue), var(--yellow)); */
+    color: transparent;
+    width: fit-content;
+    /* font-family: 'Manrope'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* Text */
+    background: linear-gradient(257.3deg, #EBBD84 6.28%, #3353A8 102.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 7px;
+}
+
+.header__title-container .btn,
+.section__solution_container .btn,
+.section__shape_the_future .btn {
+    margin: 0 auto;
+    width: 221px;
+    height: 54px;
+    border-radius: 32px;
+    font-size: 18px;
+    /* font-family: var(--font); */
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--white);
+    border: none;
+    font-weight: bold;
+    outline: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    height: 56px;
+    width: 223px;
+    border-radius: 32px;
+    background-image: linear-gradient(119deg, var(--blue), var(--yellow));
+    z-index: -10;
+
+}
+
+.btn:hover {
+    background-color: var(--extra-light);
+    z-index: 0;
+}
+
+.btn_colored {
+    /* Auto Layout Horizontal */
+
+    /* Auto layout */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px; */
+
+    width: 223px;
+    height: 56px;
+
+    /* button */
+    background: linear-gradient(274.43deg, #EBBD84 -3.28%, #3353A8 132.5%);
+    border-radius: 32px;
+    /* Invest now */
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #E9ECEF;
+}
+
+@media (min-width: 500px) {
+    html {
+        --container: 640px;
+    }
+
+    .h1 {
+        /* Heading */
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        /* White */
+        color: #E9ECEF;
+    }
+
+    .gradient_text {
+        /* background-image: linear-gradient(to right, var(--blue), var(--yellow)); */
+        color: transparent;
+        width: fit-content;
+
+        /* font-family: 'Manrope'; */
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+
+        /* Text */
+        background: linear-gradient(257.3deg, #EBBD84 6.28%, #3353A8 102.93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        /* text-fill-color: transparent; */
+        margin-bottom: 4px;
+    }
+
+    .h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    /* body{
+        background: url('../img/problem_vector.png') no-repeat;
+        position: 357px 1369px;
+    } */
+}
+
+@media (min-width: 1300px) {
+    html {
+        --container: 1280px;
+        --padding-container: 40px;
+    }
+}

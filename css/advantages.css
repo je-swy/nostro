@@ -1,0 +1,20 @@
+.link__learn_more {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #EBBD84;
+}
+
+.link__learn_more::after{
+    content: url('/img/arrow.svg');
+    margin: 7px;
+    display: inline;
+}
+
+.section__advantages {
+    margin-bottom: 168px;
+}
