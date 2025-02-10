@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Базовий стиль для навігації */
+        .header {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(to right, #333, #555);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .logo {
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .request-btn {
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Фіксована навігація після скролу */
+        .sticky {
+            position: fixed;
+            top: 0;
+            background: black;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Мобільна навігація */
+        .burger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .nav, .request-btn {
+                display: none;
+            }
+
+            .burger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="logo">Nostro Corp.</div>
+    <nav class="nav">
+        <a href="#">Solution</a>
+        <a href="#">Why invest in us</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+    </nav>
+    <a href="#" class="request-btn">Request a call</a>
+    <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+
+<script>
+    window.addEventListener("scroll", function() {
+        var header = document.getElementById("header");
+        if (window.scrollY > 50) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    });
+</script>
+
+</body>
+</html>

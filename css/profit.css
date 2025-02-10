@@ -1,8 +1,10 @@
+
+
 .accordion {
     max-width: 600px;
     margin: auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .section__profit_forecast{
@@ -11,7 +13,7 @@
 
 .accordion_item {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-bottom: 64px;
 }
 
@@ -50,21 +52,29 @@
 
 
 @media (max-width: 768px) {
-    .accordion_item {
+    .accordion-item {
         flex-direction: column;
     }
-
-    .accordion_content {
-        max-height: 500px !important;
-        /* padding: 15px !important; */
+    .accordion-content {
+        padding: 15px;
         display: flex;
         flex-direction: column;
     }
+    .desktop-image {
+        display: none;
+    }
 }
-
 
 @media (min-width:768px) {
 
+    .section__profit_forecast .gradient_text{
+        margin: 0 auto;
+    }
+    .desktop-image {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
     .accordion_content {
         background-color: #222;
     }
@@ -72,7 +82,12 @@
     .accordion_item {
         border-bottom: 1px solid #444;
     }
-
+    .accordion {
+        max-width: 800px;
+    }
+    .accordion-item picture {
+        display: none;
+    }
     .accordion-content {
         flex-direction: row;
         align-items: center;

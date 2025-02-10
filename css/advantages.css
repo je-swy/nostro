@@ -9,7 +9,11 @@
     color: #EBBD84;
 }
 
-.link__learn_more::after{
+.section__advantages_title_container {
+    margin-bottom: 48px;
+}
+
+.link__learn_more::after {
     content: url('/img/arrow.svg');
     margin: 7px;
     display: inline;
@@ -17,4 +21,183 @@
 
 .section__advantages {
     margin-bottom: 168px;
+}
+
+.scroll-wrapper {
+    position: relative;
+    padding-bottom: 48px;
+    /* Залишаємо місце для контролів */
+}
+
+/* Контейнер для скролу */
+.scroll-container {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 48px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-item {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    color: white;
+    /* Rectangle */
+    padding: 40px 24px;
+
+
+    box-sizing: border-box;
+
+    background: rgba(83, 83, 98, 0.1);
+    border: 1px solid #33333A;
+    backdrop-filter: blur(4.2px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 12px;
+
+}
+
+
+.scroll-item__heading {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #E9ECEF;
+    margin-bottom: 24px;
+}
+
+/* Контейнер для прогрес-бара та кнопок */
+.scroll-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 10px; */
+    gap: 64px;
+}
+
+/* Прогрес-бар */
+.progress-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-progress {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    position: relative;
+}
+
+.scroll-progress-bar {
+    height: 100%;
+    width: 0%;
+    /* background: linear-gradient(to right, #d3a14b, #9176ff); */
+    /* Rectangle 40 */
+    /* Gradient */
+    background: linear-gradient(267.34deg, #EBBD84 4.45%, #3353A8 95.55%);
+    backdrop-filter: blur(4.2px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 12px;
+    /* border-radius: 2px; */
+    transition: width 0.1s ease-out;
+}
+
+/* Кнопки */
+.scroll-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+/* Кнопки */
+.scroll-button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #33333A;
+    /* color: white; */
+    border-radius: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.1s;
+
+}
+
+/* Ефект при наведенні */
+.scroll-button:hover {
+    background: linear-gradient(274.43deg, #EBBD84 -3.28%, #3353A8 132.5%);
+}
+
+/* Ефект при натисканні */
+.scroll-button:active {
+    background: linear-gradient(274.43deg, #EBBD84 -3.28%, #3353A8 132.5%);
+    transform: scale(0.9);
+    /* Невелике зменшення для ефекту кліку */
+}
+
+.scroll-button img {
+    filter: brightness(0) invert(1);
+}
+
+
+
+.section__dvantages_title,
+.section__dvantages_title_description {
+    text-align: left;
+}
+
+
+@media (min-width: 768px) {
+    .scroll-item {
+        padding: 40px 32px;
+        flex: 0 0 80%;
+    }
+
+    .section__advantages_title_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section__dvantages_title,
+    .section__dvantages_title_description {
+        text-align: left;
+    }
+
+    .section__solution_title_description {
+        padding: 0 0 0 20px;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 140%;
+        color: #D6D6D6;
+        margin: 64px;
+        margin: 0;
+    }
+
+    .section__advantages_title_container .gradient_text {
+        grid-column: 1 / -1;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .scroll-item {
+        flex: 0 0 33%;
+    }
 }

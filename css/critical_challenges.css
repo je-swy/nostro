@@ -27,6 +27,19 @@
     margin-bottom: 24px;
 }
 
+.critical-challanges__glow {
+    /* Vector */
+
+    position: absolute;
+    width: 243px;
+    height: 240px;
+    left: -98px;
+    top: 1103px;
+
+    background: linear-gradient(86.12deg, #EBBD84 3.36%, #3353A8 96.64%);
+    filter: blur(155px);
+}
+
 @media (min-width:768px) {
     .section__critical_challenges_container {
         grid-template-columns: repeat(2, 1fr);
@@ -45,5 +58,25 @@
         line-height: 50px;
         margin-bottom: 0px;
         margin-right: 32px;
+    }
+
+    .critical_challanges_statistic_title {
+        /* 89% */
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: #E9ECEF;
+    }
+
+    .critical_challanges_statistic_description {
+        /* Body type 2 */
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: #D6D6D6;
     }
 }
