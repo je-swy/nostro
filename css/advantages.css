@@ -6,17 +6,22 @@
     line-height: 22px;
     /* identical to box height */
 
-    color: #EBBD84;
+    color: var(--yellow);
 }
 
 .section__advantages_title_container {
     margin-bottom: 48px;
 }
 
-.link__learn_more::after {
+/* .link__learn_more::after {
     content: url('/img/arrow.svg');
     margin: 7px;
     display: inline;
+} */
+
+.link__learn_more:hover {
+
+    border-bottom: 1px solid var(--yellow);
 }
 
 .section__advantages {

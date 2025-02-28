@@ -79,4 +79,18 @@
         line-height: 140%;
         color: #D6D6D6;
     }
+
+    .critical-challanges__glow {
+        /* Vector */
+
+        position: absolute;
+        width: 243px;
+        height: 240px;
+        left: 357px;
+        top: 1369px;
+
+        background: linear-gradient(86.12deg, #EBBD84 3.36%, #3353A8 96.64%);
+        filter: blur(155px);
+
+    }
 }

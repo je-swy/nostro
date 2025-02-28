@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nostro Corp.</title>
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="preload" href="fonts/lexend-v23-latin-300.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/lexend-v23-latin-500.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/lexend-v23-latin-700.woff2" as="font" crossorigin>
@@ -14,13 +15,13 @@
 
 <body>
   <header class="header" id="home">
-    <nav class="container">
+    <nav>
       <div class="nav__header">
         <div class="nav__logo">
           <a href="">Nostro Corp.</a>
         </div>
         <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-line"><img src="img/nav_burder.svg" alt=""></i>
+          <i class="ri-menu-line"></i>
         </div>
       </div>
       <div class="nav__header_big">
@@ -31,20 +32,22 @@
           <li><a href="#services">About us</a></li>
           <li><a href="#contact">Contact us</a></li>
         </ul>
+        <button class="request-call-btn btn_colored">Request a call</button>
       </div>
-      <button class="request-call-btn btn_colored">Request a call</button> 
     </nav>
+
+
     <div class="container header__container">
       <div class="header__title-container">
         <h1 class="header__title">We’ll bring $2.5 trillion of crypto assets back into the real economy</h1>
         <p class="header__appeal">
           IBAN and crypto accounts powered by a revolutionary blockchain.
         </p>
-        <button class="btn">Make investment</button>
+        <button class="btn-transparent">Make investment</button>
       </div>
     </div>
   </header>
-  
+
   <main class="main" id="">
     <section class="container section section__critical_challenges_container">
       <p class="critical_challanges_problem gradient_text">
@@ -101,7 +104,7 @@
         </div>
       </div>
 
-      <div class="critical-challanges__glow"> </div>
+      <div class="critical-challanges__glow"><img src="/img/problem_vector.svg"></div>
     </section>
 
     <section class="container section__solution">
@@ -127,7 +130,8 @@
               Cryptocurrency in real economy
             </h3>
             <div class="solution_container__img">
-              <img class="img_position first_pic" src="img/solution_big_pic/crypto.png" alt="">
+
+              <img class="solution__img first_pic" src="img/solution_big_pic/crypto.png" alt="">
             </div>
 
             <p class="solution__container_description text_light_small">
@@ -149,20 +153,23 @@
             </ul>
           </div>
           <div class="solution_container__img_big">
-            <img class="img_position first_pic" src="img/solution_big_pic/crypto.png" alt="">
+            <div class="solution_container__glow1"></div>
+            <img class="solution__img first_pic" src="img/solution_big_pic/crypto.png" alt="">
           </div>
         </div>
 
         <div class="solution_container__item">
           <div class="solution_container__img_big">
-            <img class="img_position second_pic" src="img/solution_big_pic/monetary.png" alt="">
+            <div class="solution_container__glow2"></div>
+
+            <img class="solution__img second_pic" src="img/solution_big_pic/monetary.png" alt="">
           </div>
           <div class="solution_container">
             <h3 class="solution__container_title h3_phone">
               Monetary Policy
             </h3>
             <div class="solution_container__img">
-              <img class="img_position second_pic" src="img/solution_big_pic/monetary.png" alt="">
+              <img class="solution__img second_pic" src="img/solution_big_pic/monetary.png" alt="">
             </div>
             <p class="solution__container_description text_light_small">
               Nostro Ecosystem integrates cryptocurrencies into the real economy through mechanisms inspired by the
@@ -183,7 +190,7 @@
               Global accessibility and unification
             </h3>
             <div class="solution_container__img">
-              <img class="img_position third_pic" src="img/solution_big_pic/global.png" alt="">
+              <img class="solution__img third_pic" src="img/solution_big_pic/global.png" alt="">
             </div>
             <p class="solution__container_description text_light_small">
               The Nostro blockchain enables businesses worldwide to integrate cryptocurrencies into the real economy,
@@ -196,20 +203,23 @@
             </p>
           </div>
           <div class="solution_container__img_big">
-            <img class="img_position third_pic" src="img/solution_big_pic/global.png" alt="">
+            <div class="solution_container__glow3"></div>
+
+            <img class="solution__img third_pic" src="img/solution_big_pic/global.png" alt="">
           </div>
         </div>
 
         <div class="solution_container__item">
           <div class="solution_container__img_big">
-            <img class="img_position fourth_pic" src="img/solution_big_pic/freedom.png" alt="">
+            <div class="solution_container__glow4"></div>
+            <img class="solution__img fourth_pic" src="img/solution_big_pic/freedom.png" alt="">
           </div>
           <div class="solution_container">
             <h3 class="solution__container_title h3_phone">
               Freedom of transactions
             </h3>
             <div class="solution_container__img">
-              <img class="img_position fourth_pic" src="img/solution_big_pic/freedom.png" alt="">
+              <img class="solution__img fourth_pic" src="img/solution_big_pic/freedom.png" alt="">
             </div>
             <p class="solution__container_description text_light_small">
               Nostro offers fiat and cryptocurrency accounts for businesses and individuals, enabling seamless local
@@ -225,7 +235,7 @@
           </div>
         </div>
       </div>
-      <button class="btn">Explore more</button>
+      <button class="btn-transparent">Explore more</button>
 
     </section>
 
@@ -243,6 +253,7 @@
           transactions except regulation requirements.
           <br />
           <a class="link__learn_more" href="#">Learn more</a>
+          <img src="/img/arrow.svg" style="margin-left: 7px;" alt="" srcset="">
         </p>
       </div>
 
@@ -251,18 +262,21 @@
         <div class="scroll-container" id="scroll-container">
           <div class="scroll-item">
             <h3 class="scroll-item__heading">Nostro stands above the competition</h3>
-            <p class="scroll-item__description text_light_small">Nostro offers seamless crypto and fiat integration with unrestricted transactions and remote onboarding,
+            <p class="scroll-item__description text_light_small">Nostro offers seamless crypto and fiat integration with
+              unrestricted transactions and remote onboarding,
               setting a new standard for real economy connectivity.</p>
           </div>
           <div class="scroll-item">
             <h3 class="scroll-item__heading">Investment opportunities for individuals</h3>
-            <p class="scroll-item__description text_light_small">Nostro offers individuals the ability to earn and spend cryptocurrency on daily purchases. They also
+            <p class="scroll-item__description text_light_small">Nostro offers individuals the ability to earn and spend
+              cryptocurrency on daily purchases. They also
               gain access to innovative investment assets tied to real market demand, enabling passive income and
               financial stability.</p>
           </div>
           <div class="scroll-item">
             <h3 class="scroll-item__heading"> Seamless business integration</h3>
-            <p class="scroll-item__description text_light_small">Businesses can boost sales by at least 30% in the first year simply by accepting Nostro tokens. No major
+            <p class="scroll-item__description text_light_small">Businesses can boost sales by at least 30% in the first
+              year simply by accepting Nostro tokens. No major
               adjustments to existing processes are required, and businesses gain access to innovative cryptocurrency
               solutions.</p>
           </div>
@@ -275,8 +289,10 @@
             </div>
           </div>
           <div class="scroll-buttons">
-            <button class="scroll-button" id="scroll-left"><img src="/img/meteor-icons_arrow-left.svg" alt="Arrow Left" srcset=""></button>
-            <button class="scroll-button" id="scroll-right"><img src="/img/meteor-icons_arrow-right.svg" alt="Arrow Right" srcset=""></button>
+            <button class="scroll-button" id="scroll-left"><img src="/img/meteor-icons_arrow-left.svg" alt="Arrow Left"
+                srcset=""></button>
+            <button class="scroll-button" id="scroll-right"><img src="/img/meteor-icons_arrow-right.svg"
+                alt="Arrow Right" srcset=""></button>
           </div>
         </div>
       </div>
@@ -292,10 +308,10 @@
       <h1 class="header__title h1">Shape the future by making crypto work in the real economy</h1>
       <div class="btn-container">
         <button class="btn_colored">Invest now</button>
-        <button class="btn">Contact us</button>
+        <button class="btn-transparent">Contact us</button>
       </div>
-      <!-- <div class="shape-the-future__glow-1"></div>
-      <div class="shape-the-future__glow-2"></div> -->
+      <!-- <div class="shape-the-future__glow-1"></div> -->
+      <div class="shape-the-future__glow-2"></div>
     </section>
 
     <section class="section__profit_forecast container">
@@ -306,7 +322,7 @@
       <h2 class="section__solution_title h2">
         Explore projected growth opportunities
       </h2>
-
+      <!-- 
       <picture class="desktop-image">
         <source srcset="/img/total_profit_desktop.png" media="(min-width: 769px)">
         <img src="/img/total_profit_desktop.png" alt="Total Profit Graph" width="100%">
@@ -349,9 +365,49 @@
                 </picture>
             </div>
         </div>
-    </div>
+    </div> -->
+      <div class="desktop-only">
+        <img src="img/total_profit_desktop.png" alt="Total Profit Forecast Graph">
+      </div>
 
-      <button class="btn_colored">Explore all</button>
+      <div class="accordion">
+
+        <div class="accordion-item">
+          <button class="accordion-title">Total profit forecast </button>
+          <div class="accordion-content">
+            <p>Overall profit graph, which, by conservative estimates, will exceed three and a half billion euros over 5
+              years. Please note that 2 billion from this graph is hidden under our NDA. </p>
+            <img class="mobile-only" src=" img/total_profit_mobile.png" alt="The Nostro Funds Graph">
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">Nostro Token</button>
+          <div class="accordion-content">
+            <p>Overall profit graph, which, by conservative estimates, will exceed three and a half billion euros over 5
+              years. Please note that 2 billion from this graph is hidden under our NDA. </p>
+            <img class="mobile-only" src="img/nostro_token_mobile.png" alt="Nostro Token Graph">
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">Nostro Coin</button>
+          <div class="accordion-content">
+            <p>Overall profit graph, which, by conservative estimates, will exceed three and a half billion euros over 5
+              years. Please note that 2 billion from this graph is hidden under our NDA. </p>
+            <img class="mobile-only" src="img/nostro_coin_mobile.png" alt="Nostro Coin Graph">
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-title">Withdrawal forecast</button>
+          <div class="accordion-content">
+            <p>Overall profit graph, which, by conservative estimates, will exceed three and a half billion euros over 5
+              years. Please note that 2 billion from this graph is hidden under our NDA. </p>
+            <img class="mobile-only" src="img/withdrawal_forecast_mobile.png" alt="Withdrawal Forecast Graph">
+          </div>
+        </div>
+
+      </div>
+      </div>
+      <button class="btn_colored btn_profit">Explore all</button>
 
 
     </section>
@@ -410,7 +466,7 @@
           </p>
         </div>
       </div>
-      <div class="foundation__glow"></div>
+      <!-- <div class="foundation__glow"></div> -->
     </section>
     <section class="section__invest container">
       <div class="invest_container">
@@ -423,7 +479,7 @@
           flow. Dogecoin dai cardano kusama terra. Cosmos stellar audius ethereum EOS TRON shiba-inu.
         </p>
 
-        <button class="btn">Make investment</button>
+        <button class="btn-transparent">Make investment</button>
 
       </div>
 

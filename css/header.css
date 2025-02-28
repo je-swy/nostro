@@ -4,7 +4,8 @@
     url('../img/vector_header_mobile_2.png') no-repeat;
   background-position: -40px -325px, -500px -300px, 100.88px -40px;
   padding: 50px 0 1px 0;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
+  min-height: 692px;
 }
 
 .header__title {
@@ -28,50 +29,60 @@
 }
 
 nav {
+  isolation: isolate;
   position: fixed;
   top: 0;
   width: 100%;
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   margin: auto;
   z-index: 9;
+  /* width: 100vw; */
 }
 
 .nav__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 48px 24px;
+  padding: 36px 24px;
+  background: rgba(20, 20, 20, 1);
 }
 
 .nav__menu__btn {
   color: var(--white);
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
 .nav__links {
   list-style: none;
   position: absolute;
+  padding: 2rem 0;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
-  background: rgba(20, 20, 20, 0.7);
+  gap: 1rem;
+  background: rgba(20, 20, 20, 1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transform: translateY(-100%);
-  transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+  /* transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s; */
   /* Додаємо затримку для visibility */
   z-index: -1;
-  opacity: 0;
-  visibility: hidden;
+  transition: 0.5s;
+  /* opacity: 0;
+  visibility: hidden; */
 }
 
 .nav__links.open {
-  transform: translateY(0);
-  opacity: 1;
+  transform: translateY(60px);
+  /* opacity: 1;
   visibility: visible;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease; */
   /* Відновлюємо перехід для відкритого меню */
+}
+
+.nav__header_big_logo {
+  display: none;
 }
 
 .nav__links a {
@@ -82,12 +93,11 @@ nav {
 }
 
 .nav__links a:hover {
+  transition: 0.4s;
   border-color: var(--white);
 }
 
-.nav__header_big_logo {
-  display: none;
-}
+
 
 .sticky {
   position: fixed;
@@ -95,15 +105,16 @@ nav {
   left: 0;
   right: 0;
   width: 100%;
-  background: rgba(20, 20, 20, 0.7);
+  background: rgba(20, 20, 20, 1);
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   transition: all 0.3s ease-in-out;
   z-index: 1000;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 12px var(--padding-container);
+  padding: 12px (var(--padding-container) * 2);
 }
+
 .nav__header_big {
   display: flex;
   justify-content: space-between;
@@ -122,19 +133,18 @@ nav {
 
 .request-call-btn {
   display: none;
-
+  /* margin: auto calc(var(--padding-container)*2) auto 0; */
 }
 
-/* Коли навігація стає sticky, кнопка з’являється */
 .sticky .request-call-btn {
   display: block;
 }
-
+/* 
 @media (min-width: 500px) {
   .header__title-container {
     margin: 281px auto 377px;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .header {
@@ -143,10 +153,12 @@ nav {
       url('../img/vector_header_mobile_1.png') no-repeat,
       url('../img/vector_header_mobile_2.png') no-repeat;
     background-position: 9.63% 74.92%, -64.34% -77.05%, 125% 60.05%;
+    min-height: 1009px;
   }
 
   .header__title-container {
     max-width: 1008px;
+    margin: 178px auto;
     text-align: center;
   }
 
@@ -162,29 +174,29 @@ nav {
   }
 
   .nav__header_big {
-    display: flex;
+    display: flex;   
+    max-width: var(--max-width);
+    padding: 0 calc(var(--padding-container) * 2);
     justify-content: space-between;
     align-items: center;
   }
 
-
   .nav__header_big_logo {
     display: inline;
-    width: 130px;
+    min-width: 130px;
     font-size: 18px;
     font-weight: 700;
   }
 
-  nav {
+  /* nav {
     position: static;
-  }
+  } */
 
   .nav__header {
     display: none;
   }
 
   .nav__links {
-    /* Відображення пунктів меню в рядок */
     position: static;
     transform: none;
     flex-direction: row;
@@ -192,11 +204,8 @@ nav {
     background-color: transparent;
     gap: 32px;
     opacity: 1;
-    /* Пункт меню має бути видимим */
     visibility: visible;
-    /* І також має бути видимим */
     z-index: 1;
-    /* Переконайтеся, що меню поверх всіх елементів */
   }
 
   .nav__links a {
@@ -212,7 +221,12 @@ nav {
     max-width: 150px;
   }
 }
+@media (min-width: 1300px) {
+  .nav__header_big {
+    padding: 0;
+  }
 
+}
 @media (min-width: 1440px) {
   .header {
     background-position: 9.63% 74.92%, -64.34% -77.05%, 125% 60.05%;

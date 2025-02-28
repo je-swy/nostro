@@ -181,14 +181,31 @@ fieldset {
     margin-bottom: 7px;
 }
 
+.btn-transparent{
+    margin: 0 auto;
+    border-radius: 32px;
+    height: 56px;
+    width: 223px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+    border: 10px solid transparent;
+    border-image: url('../img/btn.svg') 10 stretch;
+}
 
+.btn-transparent:hover{
+    border: none;
+    /* background-image: linear-gradient(119deg, var(--blue), var(--yellow)); */
+    background: linear-gradient(274.43deg, #EBBD84 -3.28%, #3353A8 132.5%);
+}
+/* 
 .btn {
     margin: 0 auto;
     width: 221px;
     height: 54px;
     border-radius: 32px;
     font-size: 18px;
-    /* font-family: var(--font); */
+    font-family: var(--font);
     cursor: pointer;
     background-color: var(--bg-color);
     color: var(--white);
@@ -214,8 +231,11 @@ fieldset {
 
 .btn:hover {
     background-color: var(--extra-light);
+    transition: 0.3s;
     z-index: 0;
-}
+} */
+
+
 
 .btn_colored {
     /* Auto Layout Horizontal */
@@ -247,9 +267,14 @@ fieldset {
     color: #E9ECEF;
 }
 
+.btn_colored:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 @media (min-width: 500px) {
     html {
-        --container: 640px;
+        --container: 480px;
     }
 
     .h1 {
@@ -294,6 +319,31 @@ fieldset {
         position: 357px 1369px;
     } */
 }
+
+@media (min-width: 600px) {
+    html {
+        --container: 580px;
+    }
+}
+
+@media (min-width: 700px) {
+    html {
+        --container: 660px;
+    }
+}
+
+@media (min-width: 800px) {
+    html {
+        --container: 760px;
+    }
+}
+
+@media (min-width: 1000px) {
+    html {
+        --container: 980px;
+    }
+}
+
 
 @media (min-width: 1300px) {
     html {

@@ -1,4 +1,4 @@
-
+/* 
 
 .accordion {
     max-width: 600px;
@@ -18,7 +18,7 @@
 }
 
 .accordion_title {
-    /* padding: 15px; */
+   
     width: 100%;
     text-align: left;
     border: none;
@@ -30,7 +30,7 @@
 .accordion_content {
     max-height: 0;
     overflow: hidden;
-    /* padding: 0 15px; */
+
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
     display: flex;
     flex-direction: column;
@@ -38,14 +38,13 @@
 
 .active+.accordion_content {
     max-height: 500px;
-    /* padding: 15px; */
 }
 
 .accordion_content_description{
     margin-bottom: 24px;
 }
 
-.section__profit_forecast .btn_colored {
+.btn_profit {
     margin: 0 auto;
     display: block;
 }
@@ -100,4 +99,190 @@
         flex: 1;
     }
 
+} */
+
+
+
+
+.desktop-only {
+    display: none;
+}
+
+.accordion {
+    margin: auto;
+}
+
+
+
+.btn_profit {
+    margin: 0 auto;
+    display: block;
+}
+
+.section__profit_forecast {
+    margin-bottom: 120px;
+}
+
+.accordion {
+    margin-bottom: 64px;
+    width: 100%;
+}
+
+.accordion-title {
+    /* width: 100%; */
+    /* Title */
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #D6D6D6;
+    margin-bottom: 16px;
+}
+
+.accordion-item {
+    margin-bottom: 64px;
+}
+
+.accordion-content {
+    text-align: center;
+}
+
+.accordion-content p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #D6D6D6;
+    margin: 0 auto 24px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.accordion-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease-out;
+    /* padding: 0 15px; */
+}
+
+.accordion-item.active .accordion-content {
+    /* padding: 15px; */
+}
+
+@media (min-width: 769px) {
+    .accordion-item {
+        padding: 10px 12px;
+        margin-bottom: 4px;
+        border: 1px solid #33333A;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .accordion-content p {
+        margin-bottom: 0;
+    }
+
+    .accordion-title {
+        display: inline-block;
+        width: fit-content;
+        text-align: left;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        height: 28px;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 0;
+        color: #D6D6D6;
+    }
+
+    .accordion-title::before {
+        content: url('/img/solution_arrow.png');
+        padding: 7px 6.87px;
+    }
+
+    .accordion-content {
+        max-width: 608px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s linear;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: #D6D6D6;
+    }
+    .accordion-content {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease-out;
+        /* padding: 0 15px; */
+    }
+    
+    .accordion-item.active .accordion-content {
+        max-height: 600px;
+        /* padding: 15px; */
+    }
+
+    .accordion-item.active .accordion-title {
+        color: #EBBD84;
+    }
+
+    .accordion-item.active {
+        border: none;
+    }
+
+    .accordion-item.active .accordion-title::before {
+        content: url('/img/solution_arrow_clicked.png');
+        padding: 4.93px;
+    }
+
+    .accordion-content img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+
+    .section__solution_title {
+        margin-bottom: 64px;
+    }
+
+    .desktop-only {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .section__profit_forecast .gradient_text {
+        margin: 0 auto;
+    }
+
+    .desktop-only {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .btn_profit {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .accordion-item {
+        width: 100%;
+    }
+
+    .section__profit_forecast {
+        margin-bottom: 128px;
+    }
 }

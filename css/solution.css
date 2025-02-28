@@ -72,42 +72,16 @@
 }
 
 .solution_container__img {
+
+    width: fit-content;
+}
+
+.solution__img {
     background: rgba(83, 83, 98, 0.1);
     border: 1px solid #33333A;
     backdrop-filter: blur(4.5px);
     border-radius: 12px;
 }
-
-/* 
-.img_position {
-    position: relative;
-}
-
-.first_pic {
-    left: 16px;
-    top: 60px;
-    scale: 1.5;
-    padding-left: 30px;
-    padding-top: 60px;
-    scale: 2;
-}
-
-.second_pic {
-    padding-left: 30px;
-    padding-top: 60px;
-    scale: 2;
-}
-
-.third_pic {
-    padding-left: 54px;
-    scale: 1.53;
-    padding-top: 35px;
-}
-
-.fourth_pic {
-    scale: 1.51;
-    padding-left: 47px;
-} */
 
 .solution__list {
     margin-top: 16px;
@@ -129,6 +103,65 @@
         display: block;
     }
 
+    .solution_container__glow1 {
+        /* Vector */
+
+        position: absolute;
+        width: 109px;
+        height: 108px;
+        left: 891px;
+        top: 2102px;
+
+        background: #EBBD84;
+        filter: blur(100px);
+        overflow: hidden;
+
+    }
+
+    .solution_container__glow2 {
+        /* Vector */
+
+        position: absolute;
+        width: 141px;
+        height: 140px;
+        left: 179px;
+        top: 2658px;
+
+        background: #3353A8;
+        filter: blur(105px);
+        overflow: hidden;
+
+    }
+
+    .solution_container__glow3 {
+        /* Vector */
+
+        position: absolute;
+        width: 125px;
+        height: 124px;
+        left: 1139px;
+        top: 3104px;
+
+        background: #EBBD84;
+        filter: blur(85px);
+        overflow: hidden;
+
+    }
+
+    .solution_container__glow4 {
+        /* Vector */
+
+        position: absolute;
+        width: 141px;
+        height: 140px;
+        left: 280px;
+        top: 3512px;
+
+        background: #3353A8;
+        filter: blur(105px);
+        overflow: hidden;
+
+    }
 
     .section__solution_container {
         flex-wrap: nowrap;
@@ -192,46 +225,18 @@
         flex-wrap: nowrap;
     }
 
-    .img_position {
+    .solution__img {
         position: static;
         scale: 1;
         padding: 0;
         margin: 0;
-
+        /* 
         background: rgba(83, 83, 98, 0.1);
         border: 1px solid #33333A;
         backdrop-filter: blur(4.2px);
         /* Note: backdrop-filter has minimal browser support */
-        border-radius: 12px;
+        /* border-radius: 12px; */
 
     }
-
-    /* 
-    .img_position {
-        position: relative;
-    }
-
-    .first_pic {
-        top: -50px;
-        left: 72px;
-        scale: 1.65;
-    }
-
-    .second_pic {
-        left: -110px;
-        scale: 1.0;
-        top: -20px;
-        bottom: -74px;
-    }
-
-    .third_pic {
-        left: -56px;
-        scale: 0.9;
-    }
-
-    .fourth_pic {
-        left: -56px;
-        scale: 1.33;
-    } */
 
 }
