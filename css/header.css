@@ -26,6 +26,7 @@
 
 .header__title-container {
   margin-top: 178px;
+  text-align: center;
 }
 
 nav {
@@ -120,8 +121,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1600px; /* Щоб контент не був надто широким на великих екранах */
-  margin: 0 auto; /* Центруємо */
+  max-width: 1600px;
+  margin: 0 auto; 
 }
 .sticky .nav__header_big {
   width: 100%;
@@ -135,6 +136,7 @@ nav {
   display: none;
   /* margin: auto calc(var(--padding-container)*2) auto 0; */
 }
+
 
 .sticky .request-call-btn {
   display: block;
