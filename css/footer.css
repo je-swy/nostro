@@ -8,8 +8,6 @@
     gap: 64px;
 }
 
-
-
 .footer-logo {
     grid-area: logo;
     font-family: 'Lexend';
@@ -18,8 +16,6 @@
     font-size: 24px;
     line-height: 30px;
 }
-
-/* Іконки соцмереж */
 .footer-icons {
     grid-area: icons;
     display: flex;
@@ -37,7 +33,6 @@
     opacity: 1;
 }
 
-/* Меню */
 .footer-menu {
     grid-area: menu;
     list-style: none;
@@ -91,7 +86,6 @@
     color: #D6D6D6;
 }
 
-/* 🖥 Десктопна версія */
 @media (min-width: 768px) {
     .footer-container {
         display: grid;

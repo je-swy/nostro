@@ -7,26 +7,13 @@
     --light-grey: rgba(83, 83, 98, 0.1);
     --grey: #47474E;
     --bg-color: #181819;
-    --max-width: 1280px;
-    /* --font: "Lexend", serif;
-
-  --font-size-h1: 48px;
-  --font-size-h2: 40px;
-  --font-size-h2: 40px;
-  --font-size-h4: 22px;
-
-  --font-size-type-1: 18px;
-  --font-size-type-2: 16px;
-  --font-size-label: 16px; */
-
+    --max-width: 1288px;
 }
 
 html {
     --container: 327px;
     --padding-container: 24px;
     box-sizing: border-box;
-    /* position: relative;
-    overflow-x: hidden; */
 }
 
 *,
@@ -41,23 +28,16 @@ body {
     min-height: 100vh;
     background-color: #181819;
     color: #D6D6D6;
-
-    /* position: relative;
-    overflow-x: hidden; */
 }
 
 
 .inest__svg-bg {
-    /* Group 174 */
-
     position: absolute;
     width: 739px;
     height: 698.36px;
     left: -348px;
     top: 10472.11px;
 }
-
-
 
 img,
 svg {
@@ -163,16 +143,12 @@ fieldset {
 }
 
 .gradient_text {
-    /* background-image: linear-gradient(to right, var(--blue), var(--yellow)); */
     color: transparent;
     width: fit-content;
-    /* font-family: 'Manrope'; */
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-
-    /* Text */
     background: linear-gradient(257.3deg, #EBBD84 6.28%, #3353A8 102.93%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -181,7 +157,7 @@ fieldset {
     margin-bottom: 7px;
 }
 
-.btn-transparent{
+.btn-transparent {
     margin: 0 auto;
     border-radius: 32px;
     height: 56px;
@@ -193,81 +169,27 @@ fieldset {
     border-image: url('../img/btn.svg') 10 stretch;
 }
 
-.btn-transparent:hover{
+.btn-transparent:hover {
     border: none;
-    /* background-image: linear-gradient(119deg, var(--blue), var(--yellow)); */
     background: linear-gradient(274.43deg, #EBBD84 -3.28%, #3353A8 132.5%);
 }
-/* 
-.btn {
-    margin: 0 auto;
-    width: 221px;
-    height: 54px;
-    border-radius: 32px;
-    font-size: 18px;
-    font-family: var(--font);
-    cursor: pointer;
-    background-color: var(--bg-color);
-    color: var(--white);
-    border: none;
-    font-weight: bold;
-    outline: none;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn::after {
-    content: '';
-    position: absolute;
-    height: 56px;
-    width: 223px;
-    border-radius: 32px;
-    background-image: linear-gradient(119deg, var(--blue), var(--yellow));
-    z-index: -10;
-
-}
-
-.btn:hover {
-    background-color: var(--extra-light);
-    transition: 0.3s;
-    z-index: 0;
-} */
-
 
 
 .btn_colored {
-    /* Auto Layout Horizontal */
-
-    /* Auto layout */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px; */
-
     width: 223px;
     height: 56px;
-
-    /* button */
     background: linear-gradient(274.43deg, #EBBD84 -3.28%, #3353A8 132.5%);
     border-radius: 32px;
-    /* Invest now */
-
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
     text-align: center;
-
     color: #E9ECEF;
 }
 
-.btn_colored:hover{
+.btn_colored:hover {
     opacity: 0.8;
     transition: 0.3s;
 }
@@ -290,21 +212,15 @@ fieldset {
     }
 
     .gradient_text {
-        /* background-image: linear-gradient(to right, var(--blue), var(--yellow)); */
         color: transparent;
         width: fit-content;
-
-        /* font-family: 'Manrope'; */
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
-
-        /* Text */
         background: linear-gradient(257.3deg, #EBBD84 6.28%, #3353A8 102.93%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        /* text-fill-color: transparent; */
         margin-bottom: 4px;
     }
 
@@ -313,11 +229,6 @@ fieldset {
         font-size: 40px;
         line-height: 50px;
     }
-
-    /* body{
-        background: url('../img/problem_vector.png') no-repeat;
-        position: 357px 1369px;
-    } */
 }
 
 @media (min-width: 600px) {

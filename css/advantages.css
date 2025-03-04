@@ -5,19 +5,12 @@
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
-
     color: var(--yellow);
 }
 
 .section__advantages_title_container {
     margin-bottom: 48px;
 }
-
-/* .link__learn_more::after {
-    content: url('/img/arrow.svg');
-    margin: 7px;
-    display: inline;
-} */
 
 .link__learn_more:hover {
 
@@ -31,10 +24,8 @@
 .scroll-wrapper {
     position: relative;
     padding-bottom: 48px;
-    /* Залишаємо місце для контролів */
 }
 
-/* Контейнер для скролу */
 .scroll-container {
     display: flex;
     gap: 40px;
@@ -77,8 +68,6 @@
     color: #E9ECEF;
     margin-bottom: 24px;
 }
-
-/* Контейнер для прогрес-бара та кнопок */
 .scroll-controls {
     position: absolute;
     bottom: 0;
@@ -91,7 +80,6 @@
     gap: 64px;
 }
 
-/* Прогрес-бар */
 .progress-wrapper {
     flex-grow: 1;
     display: flex;
@@ -109,30 +97,23 @@
 .scroll-progress-bar {
     height: 100%;
     width: 0%;
-    /* background: linear-gradient(to right, #d3a14b, #9176ff); */
-    /* Rectangle 40 */
-    /* Gradient */
     background: linear-gradient(267.34deg, #EBBD84 4.45%, #3353A8 95.55%);
     backdrop-filter: blur(4.2px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 12px;
-    /* border-radius: 2px; */
     transition: width 0.1s ease-out;
 }
 
-/* Кнопки */
 .scroll-buttons {
     display: flex;
     gap: 16px;
 }
 
-/* Кнопки */
 .scroll-button {
     width: 32px;
     height: 32px;
     border: none;
     background: #33333A;
-    /* color: white; */
     border-radius: 32px;
     cursor: pointer;
     display: flex;
@@ -142,16 +123,13 @@
 
 }
 
-/* Ефект при наведенні */
 .scroll-button:hover {
     background: linear-gradient(274.43deg, #EBBD84 -3.28%, #3353A8 132.5%);
 }
 
-/* Ефект при натисканні */
 .scroll-button:active {
     background: linear-gradient(274.43deg, #EBBD84 -3.28%, #3353A8 132.5%);
     transform: scale(0.9);
-    /* Невелике зменшення для ефекту кліку */
 }
 
 .scroll-button img {
@@ -197,8 +175,6 @@
     .section__advantages_title_container .gradient_text {
         grid-column: 1 / -1;
     }
-
-
 }
 
 @media (min-width: 1024px) {

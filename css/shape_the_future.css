@@ -34,16 +34,11 @@
     }
 
     .shape-the-future__glow-1 {
-        /* Vector */
-        /* Vector */
-
         position: absolute;
         width: 671.68px;
         height: 558.24px;
         left: 1204px;
         top: 4619.71px;
-
-        /* Gradient */
         background: linear-gradient(267.34deg, #EBBD84 4.45%, #3353A8 95.55%);
         filter: blur(150px);
         transform: matrix(0.44, 0.9, 0.94, -0.35, 0, 0);
@@ -52,16 +47,11 @@
     }
 
     .shape-the-future__glow-2 {
-        /* Vector */
-
-        /* Vector */
-
         position: absolute;
         width: 509.59px;
         height: 383.86px;
         left: calc(50% - 509.59px/2 - 428.34px);
         top: 5311.3px;
-
         background: linear-gradient(9.8deg, #EBBD84 10.64%, #3353A8 89.36%);
         filter: blur(145px);
         transform: rotate(-154.22deg);

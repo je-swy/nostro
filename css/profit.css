@@ -1,108 +1,3 @@
-/* 
-
-.accordion {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.section__profit_forecast{
-    margin-bottom: 120px;
-}
-
-.accordion_item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 64px;
-}
-
-.accordion_title {
-   
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    cursor: pointer;    
-    margin-bottom: 16px;
-}
-
-.accordion_content {
-    max-height: 0;
-    overflow: hidden;
-
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    display: flex;
-    flex-direction: column;
-}
-
-.active+.accordion_content {
-    max-height: 500px;
-}
-
-.accordion_content_description{
-    margin-bottom: 24px;
-}
-
-.btn_profit {
-    margin: 0 auto;
-    display: block;
-}
-
-
-@media (max-width: 768px) {
-    .accordion-item {
-        flex-direction: column;
-    }
-    .accordion-content {
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-    }
-    .desktop-image {
-        display: none;
-    }
-}
-
-@media (min-width:768px) {
-
-    .section__profit_forecast .gradient_text{
-        margin: 0 auto;
-    }
-    .desktop-image {
-        display: block;
-        margin: auto;
-        max-width: 100%;
-    }
-    .accordion_content {
-        background-color: #222;
-    }
-
-    .accordion_item {
-        border-bottom: 1px solid #444;
-    }
-    .accordion {
-        max-width: 800px;
-    }
-    .accordion-item picture {
-        display: none;
-    }
-    .accordion-content {
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-    }
-    .accordion-content picture {
-        flex: 1;
-    }
-    .accordion-content p {
-        flex: 1;
-    }
-
-} */
-
-
-
 
 .desktop-only {
     display: none;
@@ -129,8 +24,6 @@
 }
 
 .accordion-title {
-    /* width: 100%; */
-    /* Title */
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 700;
@@ -164,11 +57,6 @@
     height: 0;
     overflow: hidden;
     transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease-out;
-    /* padding: 0 15px; */
-}
-
-.accordion-item.active .accordion-content {
-    /* padding: 15px; */
 }
 
 @media (min-width: 769px) {
@@ -179,7 +67,6 @@
         border-radius: 8px;
         display: flex;
         justify-content: space-between;
-
     }
 
     .accordion-content p {

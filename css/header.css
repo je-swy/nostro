@@ -34,10 +34,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  /* max-width: var(--max-width); */
   margin: auto;
   z-index: 9;
-  /* width: 100vw; */
 }
 
 .nav__header {
@@ -66,20 +64,12 @@ nav {
   background: rgba(20, 20, 20, 1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transform: translateY(-100%);
-  /* transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s; */
-  /* Додаємо затримку для visibility */
   z-index: -1;
   transition: 0.5s;
-  /* opacity: 0;
-  visibility: hidden; */
 }
 
 .nav__links.open {
   transform: translateY(60px);
-  /* opacity: 1;
-  visibility: visible;
-  transition: transform 0.5s ease, opacity 0.5s ease; */
-  /* Відновлюємо перехід для відкритого меню */
 }
 
 .nav__header_big_logo {
@@ -107,7 +97,6 @@ nav {
   right: 0;
   width: 100%;
   background: rgba(20, 20, 20, 1);
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   transition: all 0.3s ease-in-out;
   z-index: 1000;
   display: flex;
@@ -134,19 +123,12 @@ nav {
 
 .request-call-btn {
   display: none;
-  /* margin: auto calc(var(--padding-container)*2) auto 0; */
 }
 
 
 .sticky .request-call-btn {
   display: block;
 }
-/* 
-@media (min-width: 500px) {
-  .header__title-container {
-    margin: 281px auto 377px;
-  }
-} */
 
 @media (min-width: 768px) {
   .header {
